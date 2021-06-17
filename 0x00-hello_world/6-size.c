@@ -1,8 +1,8 @@
 #include <stdio.h>
-
-/*
- * main - Initiates execution of programme file
- * Return: The value 0 when the execution is successful. Otherwise display errors
+/**
+ * main - Prints string
+ * Description: Prints sizes of data types in bytes
+ * Return: 0
  */
 int main(void)
 {
@@ -11,6 +11,7 @@ int main(void)
 	long int int_long_type;
 	long long int int_long_long_type;
 	float float_type;
+
 	printf("Size of a char: %lu byte(s)\n", sizeof(char_type));
 	printf("Size of an int: %lu byte(s)\n", sizeof(int_type));
 	printf("Size of a long int: %lu byte(s)\n", sizeof(int_long_type));
