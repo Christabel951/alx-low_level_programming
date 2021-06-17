@@ -1,10 +1,9 @@
 #include <stdio.h>
-/*
- * main - Initiates execution of programme file
- *
- * DESCRIPTION: It is the entry point of program
- * Return: The value 0 to denote successful execution
-  */
+/**
+ * main - Prints string
+ * Description: Prints "\"Programming is like building a multilingual puzzle"
+ * Return: 0
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
