@@ -8,6 +8,6 @@ int main(void)
 {
 	char tx_[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	fprintf(stderr, "%s", tx_);
+	fprintf(stderr, "%s\n", tx_);
 	return (1);
 }
