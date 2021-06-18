@@ -1,11 +1,13 @@
 #include <stdio.h>
 /**
  * main - Prints string
- * Description: Prints random specified string
+ * Description: Prints specified string.
  * Return: 0
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char tx_[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+	fprintf(stderr, "%s", tx_);
 	return (1);
 }
