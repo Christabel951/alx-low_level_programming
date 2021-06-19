@@ -16,8 +16,11 @@ int main(void)
 		s_digit = ((i%10) + '0');
 		putchar(f_digit);
 		putchar(s_digit);
-		putchar(44);
-		putchar(32);
+		if (i != 89)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	putchar('\n');
 	return (0);
