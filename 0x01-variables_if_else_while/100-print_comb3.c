@@ -12,8 +12,8 @@ int main(void)
 
 	for (i = 1; i <= 89; i++)
 	{
-		f_digit = (i/10);
-		s_digit = (i%10);
+		f_digit = (i / 10);
+		s_digit = (i % 10);
 		if ((f_digit != s_digit) && (s_digit != 0) && (f_digit < s_digit))
 		{
 			putchar(f_digit + '0');
