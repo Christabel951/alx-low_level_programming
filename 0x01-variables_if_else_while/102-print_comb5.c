@@ -25,8 +25,11 @@ int main(void)
 				j_s_digit = j % 10;
 				putchar(j_f_digit + '0');
 				putchar(j_s_digit + '0');
-				putchar(44);
-				putchar(32);
+				if ((i != 98) || (j != 99))
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
