@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 - print lower case alphabets.
- * Description: encapsulates the fuction to print lowercase alphabets 10 times
+ * _islower - check if argument passed is lowercase alphabets.
+ * Description: accepts one paramenter of type int which it evaluates
  * Return: no return value.
  */
 int _islower(int c)
