@@ -16,7 +16,9 @@ int j = 'a';
 while (j <= 'z')
 {
 _putchar(j);
+j++;
 }
 _putchar('\n');
+i++;
 }
 }
