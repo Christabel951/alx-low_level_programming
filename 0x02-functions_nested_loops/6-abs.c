@@ -3,10 +3,10 @@
 /**
  * _abs - compute absolute value of interger.
  * Description: accepts one paramenter which it evaluates set conditions.
- * @parameter: The parameter is of type int.
+ * @n: The parameter is of type int.
  * Return: value included in if statements
  */
-int _abs(int)
+int _abs(int n)
 {
 if (n >= 0)
 {
