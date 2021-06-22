@@ -9,7 +9,7 @@ int main(void)
 {
 int alpha;
 
-print_alphabet(void);
+_putchat(print_alphabet(void));
 _putchar('\n');
 return (0);
 }
