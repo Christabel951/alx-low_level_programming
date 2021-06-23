@@ -13,7 +13,7 @@
  */
 void print_to_98(int nat)
 {
-	int i;
+	int i, j;
 	if (nat > 0)
 	{
 		if (nat <= 98)
@@ -27,20 +27,15 @@ void print_to_98(int nat)
 				printf("%d", i);
 			}
 		}
-	
-	 	else if (nat == 98)
-		{
-			printf("%d, ", nat);
-		}	
 		else
 		{
-			for(i = nat; i >= 98; i--)
+			for(j = nat; j >= 98; j--)
 			{
-	              		if (i != 98)
+	              		if (j != 98)
 				{
-					printf("%d, ", i);
+					printf("%d, ", j);
 				}
-				printf("%d", i);
+				printf("%d", j);
 			}
 		}
 		printf("\n");
