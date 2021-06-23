@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    int i, mul, _mod3, _mod5, sum;
+    int i, _mod3, _mod5, sum;
     for (i = 1; i < 1024; i++)
     {
 	    _mod3 = i % 3;
