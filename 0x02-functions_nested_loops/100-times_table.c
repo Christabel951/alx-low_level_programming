@@ -29,6 +29,7 @@ void print_times_table(int n)
 						_putchar(44);
 						_putchar(32);
 						_putchar(32);
+						_putchar(32);
 					}
 				}
 				else if ((p >= 10) && (p < 100))
@@ -41,7 +42,6 @@ void print_times_table(int n)
 					if (j != n)
 					{
 						_putchar(44);
-						_putchar(32);
 						_putchar(32);
 					}
 				}
