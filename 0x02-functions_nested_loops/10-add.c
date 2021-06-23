@@ -20,6 +20,6 @@ return (sum);
 }
 else
 {
-return (-sum);
+return (sum);
 }
 }
