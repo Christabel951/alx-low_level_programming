@@ -69,5 +69,6 @@ void print_to_98(int nat)
 				}
 			}	
 		}	
-	}	
+	}
+	_putchar('\n');
 }
