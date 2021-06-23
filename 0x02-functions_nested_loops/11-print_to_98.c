@@ -14,20 +14,27 @@
 void print_to_98(int nat)
 {
 	int i;
-	if (nat > 98)
+	if (nat > 0)
 	{
-	for (i = nat; i > 98; i--)
-	{
-		printf("%d, ", i);
-	}
-	}
-	else if (nat < 98)
-	{
-		for (i = nat; i < 98; i++)
+		if (nat < 98)
 		{
-		printf("%d, ", i);
+			for (i = nat; i < 98; i++)
+			{
+			printf("%d, ", i);
+			}
 		}
+	
+	 	else if (nat == 98)
+		{
+			printf("%d, ", nat);
+		}	
+		else
+		{
+			for(i == nat; i > 98; i++)
+			{
+	              		printf("%d, ", i);
+			}
+		}
+		printf("\n");
 	}
-	printf("%d\n", nat);
-
 }
