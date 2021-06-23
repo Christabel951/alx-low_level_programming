@@ -34,7 +34,7 @@ _putchar(32);
 _putchar(pfd + 48);
 _putchar(psd + 48);
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
