@@ -43,6 +43,7 @@ void print_times_table(int n)
 					{
 						_putchar(44);
 						_putchar(32);
+						_putchar(32);
 					}
 				}
 				else if ((p >= 100) && (p < 999))
