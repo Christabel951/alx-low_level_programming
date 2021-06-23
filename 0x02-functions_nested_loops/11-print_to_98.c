@@ -16,11 +16,15 @@ void print_to_98(int nat)
 	int i;
 	if (nat > 0)
 	{
-		if (nat < 98)
+		if (nat <= 98)
 		{
-			for (i = nat; i < 98; i++)
+			for (i = nat; i <= 98; i++)
 			{
-			printf("%d, ", i);
+				if (i != 98)
+				{
+					printf("%d, ", i);
+				}
+				printf("%d", i);
 			}
 		}
 	
@@ -30,9 +34,13 @@ void print_to_98(int nat)
 		}	
 		else
 		{
-			for(i = nat; i > 98; i++)
+			for(i = nat; i >= 98; i--)
 			{
-	              		printf("%d, ", i);
+	              		if (i != 98)
+				{
+					printf("%d, ", i);
+				}
+				printf("%d");
 			}
 		}
 		printf("\n");
