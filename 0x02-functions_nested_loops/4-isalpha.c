@@ -3,7 +3,7 @@
 /**
  * _isalpha - check if argument passed is lowercase alphabets.
  * Description: accepts one paramenter which it evaluates.
- * The parameter c is of type int.
+ * @c: parameter c is of type int.
  * Return: no return value.
  */
 int _isalpha(int c)
