@@ -12,7 +12,7 @@
  */
 void print_to_98(int nat)
 {
-	if ((nat !<= 0) || (nat < 1000))
+	if ((nat >= 0) || (nat < 1000))
 	{
 		if (nat <= 98)
 		{
