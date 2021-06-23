@@ -14,6 +14,7 @@
 void print_to_98(int nat)
 {
 	int i, j;
+
 	if (nat <= 98)
 	{
 		for (i = nat; i <= 98; i++)
