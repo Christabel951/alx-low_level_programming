@@ -23,6 +23,7 @@ else if (product < 10)
 {
 _putchar(44);
 _putchar(32);
+_putchar(32);
 _putchar(product + 48);
 }
 else if (product > 10)
