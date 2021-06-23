@@ -30,7 +30,7 @@ void print_to_98(int nat)
 		}	
 		else
 		{
-			for(i == nat; i > 98; i++)
+			for(i = nat; i > 98; i++)
 			{
 	              		printf("%d, ", i);
 			}
