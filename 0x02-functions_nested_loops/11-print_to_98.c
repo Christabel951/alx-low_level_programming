@@ -40,7 +40,7 @@ void print_to_98(int nat)
 				{
 					printf("%d, ", i);
 				}
-				printf("%d");
+				printf("%d", i);
 			}
 		}
 		printf("\n");
