@@ -3,7 +3,7 @@
 /**
  * add - adds two integers.
  *
- * Description:Accepts two arguments of type int 
+ * Description:Accepts two arguments of type int
  * and returns the computed addition.
  *
  * @a:first number in parameter list.
@@ -18,8 +18,8 @@ if (sum >= 0)
 {
 return (sum);
 }
-else 
+else
 {
-return (-sum + 48);
+return (-sum);
 }
 }
