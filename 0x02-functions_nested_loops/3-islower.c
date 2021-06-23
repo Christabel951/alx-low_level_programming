@@ -2,7 +2,7 @@
 
 /**
  * _islower - check if argument passed is lowercase alphabets.
- * Description: accepts one parameter of type int 
+ * Description: accepts one parameter of type int
  * which is evaluated with set conditions for lowercase alphabets.
  * @c: one integer type parameter
  * Return: no return value.
