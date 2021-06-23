@@ -24,7 +24,7 @@ void print_times_table(int n)
 				if (p < 10)
 				{
 					_putchar(p + 48);
-					if ((i != n) && (j != n))
+					if (j != n)
 					{
 						_putchar(44);
 						_putchar(32);
