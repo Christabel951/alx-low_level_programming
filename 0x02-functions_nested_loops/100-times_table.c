@@ -53,7 +53,7 @@ void print_times_table(int n)
 					_putchar(32);
 				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
