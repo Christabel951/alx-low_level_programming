@@ -14,7 +14,7 @@ if (_ld >= 0)
 _putchar(_ld + '0');
 return (_ld);
 }
-else 
+else
 {
 _putchar(-_ld + '0');
 return (-_ld);
