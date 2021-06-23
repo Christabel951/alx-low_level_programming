@@ -40,7 +40,7 @@ void print_times_table(int n)
 					ld = p % 10;
 					_putchar(44);
 					_putchar(32);
-					_putchar(32)
+					_putchar(32);
 					_putchar(fd + 48);
 					_putchar(ld + 48);
 					
