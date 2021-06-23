@@ -24,10 +24,13 @@ void print_times_table(int n)
 				if (p < 10)
 				{
 					_putchar(p + 48);
-					_putchar(44);
-					_putchar(32);
-					_putchar(32);
-					_putchar(32);
+					if ((i != n) && (j != n))
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
 				}
 				else if (p >= 10)
 				{
@@ -36,8 +39,12 @@ void print_times_table(int n)
 					ld = p % 10;
 					_putchar(fd + 48);
 					_putchar(ld + 48);
-					_putchar(32);
-					_putchar(32);
+					if ((i != n) && (j != n))
+					{
+						_putchar(44);
+						_putchar(32);
+						_putchar(32);
+					}
 				}
 				else if (p >= 100)
 				{
@@ -49,8 +56,11 @@ void print_times_table(int n)
 					_putchar(f + 48);
 					_putchar(s + 48);
 					_putchar(l + 48);
-					_putchar(44);
-					_putchar(32);
+					if ((i != n) && (i != j))
+					{
+						_putchar(44);
+						_putchar(32);
+					}
 				}
 			}
 			_putchar('\n');
