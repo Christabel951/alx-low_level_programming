@@ -10,27 +10,33 @@
 * Return: void
 */
 
-void print_remaining_days(int month, int day, int year)
+void times_table(void)
 {
-if (year % 4 == 0 || ((year % 100 == 0) && (year % 400 == 0)))
+int i, j, k;
+for (i = 0; i < 10; i++)
 {
-if (month > 2 && day >= 60)
+for (j = 0; j < 10; j++)
 {
-day++;
+k = j * i;
+if (j == 0)
+{
+_putchar(k + '0');
 }
-printf("Day of the year: %d\n", day);
-printf("Remaining days: %d\n", 366 - day);
-}
-else
+if (k < 10 && j != 0)
 {
-if (month == 2 && day == 60)
-{
-printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(k + '0');
 }
-else
+else if (k >= 10)
 {
-printf("Day of the year: %d\n", day);
-printf("Remaining days: %d\n", 365 - day);
+_putchar(',');
+_putchar(' ');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
 }
+}
+_putchar('\n');
 }
 }
