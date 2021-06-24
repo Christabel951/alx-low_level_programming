@@ -2,7 +2,9 @@
 /**
  * mul - checks for uppercase characters.
  *
- * @c: accept 1 parameter of type int.
+ * @a: accept 1 argument of type int.
+ *
+ * @b: accept 1 argument ,type int.
  *
  * Return: Always 0.
  */
