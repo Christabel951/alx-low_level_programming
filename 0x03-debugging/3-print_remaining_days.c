@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "holberton.h"
-
 /**
 * print_remaining_days - takes a date and prints how many days are
 * left in the year, taking leap years into account
@@ -9,34 +8,32 @@
 * @year: year
 * Return: void
 */
-
-void times_table(void)
+void print_remaining_days(int month, int day, int year)
 {
-int i, j, k;
-for (i = 0; i < 10; i++)
+if (year % 4 == 0)
 {
-for (j = 0; j < 10; j++)
+if (month > 2)
 {
-k = j * i;
-if (j == 0)
-{
-_putchar(k + '0');
+day++;
 }
-if (k < 10 && j != 0)
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 366 - day);
+}
+else
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(k + '0');
-}
-else if (k >= 10)
+if (month == 2 && day == 60 && year % 4 == 0)
 {
-_putchar(',');
-_putchar(' ');
-_putchar((k / 10) + '0');
-_putchar((k % 10) + '0');
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 366 - day);
 }
+else if (month == 2 && day == 60 && year % 4 != 0)
+{
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 }
-_putchar('\n');
+else
+{
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 365 - day);
+}
 }
 }
