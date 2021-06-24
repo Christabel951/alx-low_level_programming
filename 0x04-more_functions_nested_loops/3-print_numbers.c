@@ -2,7 +2,7 @@
 /**
  * print_numbers - prints 0 - 9, newline.
  *
- * @void: Does not accept arguments. 
+ * @void: Does not accept arguments.
  *
  * Return: void - has no return value.
  */
