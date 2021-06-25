@@ -24,7 +24,7 @@ printf(" ");
 if (m3 == 0 && m5 == 0)
 {
 printf("FizzBuzz");
-}	
+}
 else if (m5 == 0)
 {
 printf("Buzz");
@@ -33,7 +33,7 @@ else if (m3 == 0)
 {
 printf("Fizz");
 }
-else 
+else
 {
 printf("%d", i);
 }
