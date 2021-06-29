@@ -12,7 +12,7 @@ void rev_string(char *s)
 int sl = 0;
 char *t = s;
 int i = 0;
-int _index;
+int _index = 0;
 int _i;
 char r;
 
@@ -23,7 +23,7 @@ sl++;
 }
 _index = sl - 1;
 _i = _index;
-while (i <= (_i / 2) + 1)
+while (i < ((_i / 2) + 1))
 {
 r = s[i];
 s[i] = s[_index];
