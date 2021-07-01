@@ -13,7 +13,7 @@ char *rot13(char *str)
 	int k;
 	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	
+
 	while (str[i] != '\0')
 	{
 		k = 0;
