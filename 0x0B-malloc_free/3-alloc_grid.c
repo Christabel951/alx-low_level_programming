@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * alloc_grid -  returns a pointer of a pointer to a newly allocated space in memory
+ * alloc_grid -  returns pointer of pointer to newly allocated space in mem
  * which contains a 2D array whose value is initialized to 0.
  * @width: row of array.
  * @height: column of array.
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 	else
-	{	
+	{
 		for (i = 0; i < height; i++)
 		{
 			arr[i] = malloc(sizeof(int) * width);
