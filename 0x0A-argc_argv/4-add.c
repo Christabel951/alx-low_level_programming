@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include <string.h>
+int isnum(char *str);
 /**
  * main - print sum of passed numbers.
  * @argc: argument(s) count.
@@ -20,21 +21,37 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
-			{
-				r = atoi(argv[i]);
-				if (r >= 0)
-				{
-					sum += r;
-				}
-			}
-			else
+			r = isnum(argv[i]);
+			if (r == 1)
 			{
 				printf("Error\n");
 				return (1);
 			}
+			sum += atoi(argv[i]);
 		}
 		printf("%d\n", sum);
 		return (0);
 	}
+}
+/**
+ * isnum - check if char is number.
+ * @str: string to be checked
+ * Return: 1, if not a number, else 0.
+ **/
+int isnum(char *str)
+{
+	int i, num, len;
+
+	i = 0;
+	num = 0;
+	len = strlen(str);
+	while (i < len)
+	{
+		if (str[i] < '0' || str[i] > '9')
+		{
+			return (1);
+		}
+		i++;
+	}
+	return (num);
 }
