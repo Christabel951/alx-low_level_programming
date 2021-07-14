@@ -15,14 +15,6 @@ char *str_concat(char *s1, char *s2)
 	int i, k;
 	char *arr;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	else if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	lens1 = _strlen(s1);
 	lens2 = _strlen(s2);
 	arr = malloc(sizeof(char) * (lens1 + lens2 + 1));
@@ -32,16 +24,22 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		for (i = 0; i < lens1; i++)
+		if (s1)
 		{
-			arr[i] = s1[i];
+			for (i = 0; i < lens1; i++)
+			{
+				arr[i] = s1[i];
+			}
 		}
-		k = 0;
-		while (k < lens2)
+		if (s2)
 		{
-			arr[i] = s2[k];
-			i++;
-			k++;
+			k = 0;
+			while (k < lens2)
+			{
+				arr[i] = s2[k];
+				i++;
+				k++;
+			}
 		}
 		arr[i] = '\0';
 		return (arr);
