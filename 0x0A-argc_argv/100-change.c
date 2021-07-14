@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 }
 /**
  * get_coin_change - get least combination of change.
- * @_change: balance.
+ * @change: balance.
  * Return: least combination of coint change in int type.
  */
 int get_coin_change(int change)
