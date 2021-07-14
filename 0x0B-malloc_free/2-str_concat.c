@@ -3,7 +3,7 @@
 int _strlen(char *s);
 
 /**
- * _strlen -  returns a pointer to a newly allocated space in memory
+ * str_concat -  returns a pointer to a newly allocated space in memory
  * which contains the string value of concatenation of s2 upon s1.
  * @s1: first string.
  * @s2: second string.
@@ -17,11 +17,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		s1 = '\0';
+		s1 = "";
 	}
 	else if (s2 == NULL)
 	{
-		s2 = '\0';
+		s2 = "";
 	}
 	lens1 = _strlen(s1);
 	lens2 = _strlen(s2);
@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 			arr[i] = s1[i];
 		}
 		k = 0;
-		while ( k < lens2)
+		while (k < lens2)
 		{
 			arr[i] = s2[k];
 			i++;
