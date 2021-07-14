@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "holberton.h"
 /**
  * main - print program name.
@@ -9,17 +10,24 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, r, sum = 0;
 
-	if (argc > 2)
+	if (argc == 1)
+	{
+		r = 0;
+		printf("%d\n", r);
+		return (0);
+	}
+	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if ( *argv[i] >= '1' && *argv[i] <= '9')
+			if (*argv[i] >= '0' && *argv[i] <= '9')
 			{
-				if (atoi(argv[i]) >= 0)
+				r = atoi(argv[i]);
+				if (r >= 0)
 				{
-					sum += atoi(argv[i]);
+					sum += r;
 				}
 			}
 			else
@@ -27,14 +35,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-		
 		}
 		printf("%d\n", sum);
-		return (0);
-	}
-	else
-	{
-		printf("0\n");
 		return (0);
 	}
 }
