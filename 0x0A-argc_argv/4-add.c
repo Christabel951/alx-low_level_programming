@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include "holberton.h"
 /**
- * main - print program name.
+ * main - print sum of passed numbers.
  * @argc: argument(s) count.
- * @argv: passed string value.
+ * @argv: passed argument value.
  * Return: 0 -exit success.
  */
 int main(int argc, char *argv[])
@@ -14,8 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		r = 0;
-		printf("%d\n", r);
+		printf("0\n");
 		return (0);
 	}
 	else
