@@ -42,6 +42,6 @@ else
 for (i = 0; i < new_size; i++)
 ptr1[i] = ((char *)ptr)[i];
 free(ptr);
-return(ptr1);
+return (ptr1);
 }
 }
