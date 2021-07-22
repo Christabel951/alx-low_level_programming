@@ -27,5 +27,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		va_end(dgts);
 	}
-	_putchar('\n');
+	printf("\n");
 }
