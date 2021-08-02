@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
-/** print_listint - return the number of elements in listint_t list
+/** listint_len - return the number of elements in listint_t list
  * @h: pointer variable containing 1st node address
  *
  * Return: number of nodes in link
