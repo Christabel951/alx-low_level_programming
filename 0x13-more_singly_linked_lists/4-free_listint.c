@@ -3,7 +3,6 @@
 /**
  * free_listint - free list
  * @head: pointer variable containing 1st node address
- *
  * Description: free dynamic allocated memory
  */
 void free_listint(listint_t *head)
@@ -19,4 +18,5 @@ void free_listint(listint_t *head)
 		free(temp);
                 temp = head;
         }
+	free(temp);
 }
