@@ -6,7 +6,7 @@
  * Description: free dynamic allocated memory
  */
 void free_listint(listint_t *head)
-{	
+{
 	listint_t *temp;
 
 	if (!head)
