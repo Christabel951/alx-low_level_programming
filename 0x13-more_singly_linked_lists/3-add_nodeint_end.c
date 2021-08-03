@@ -3,6 +3,7 @@
 /**
  * add_nodeint_end - add node at end of list
  * @head: pointer to a poiter variable containing 1st node address
+ * @n: value passed to member n of the created node
  *
  * Description: create a new node on heap, check for errors in
  * allocation of memory process.Init the node with values n and NULL
