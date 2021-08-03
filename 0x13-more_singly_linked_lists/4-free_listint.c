@@ -4,7 +4,6 @@
  * @head: pointer variable containing 1st node address
  *
  * Description: free dynamic allocated memory
- * Return: address of new element or NULL if failed
  */
 void free_listint(listint_t *head)
 {
@@ -19,5 +18,4 @@ void free_listint(listint_t *head)
 		free(temp);
                 temp = head;
         }
-        free(temp);
 }
