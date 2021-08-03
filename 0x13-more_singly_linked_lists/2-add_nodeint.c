@@ -3,6 +3,7 @@
 /**
  * add_nodeint - add node at beginning of list
  * @head: pointer to a poiter variable containing 1st node address
+ * @n: value passed to node created
  *
  * Description: allocate memory for a new node, assign value
  * of *head to new [new now points to the 1st node] and assign
