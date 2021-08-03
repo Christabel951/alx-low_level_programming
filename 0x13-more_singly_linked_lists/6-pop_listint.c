@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * pop_listint_t - delete/free first node
+ * pop_listint - delete/free first node
  * @head: pointer to pointer variable containing a 1st node address
  *
  * Description: delete head node of list
