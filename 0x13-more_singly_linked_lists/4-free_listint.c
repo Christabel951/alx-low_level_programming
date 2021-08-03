@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
-/** free_listint - free list
+/**
+ * free_listint - free list
  * @head: pointer variable containing 1st node address
  *
  * Description: free dynamic allocated memory

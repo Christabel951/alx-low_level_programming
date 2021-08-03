@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
-/** add_nodeint_end - add node at end of list
+/**
+ * add_nodeint_end - add node at end of list
  * @head: pointer to a poiter variable containing 1st node address
  *
  * Description: create a new node on heap, check for errors in

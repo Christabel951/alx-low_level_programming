@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
-/** print_listint - print elements of a listint_t list
+/**
+ * print_listint - print elements of a listint_t list
  * @h: pointer variable containing 1st node address
  *
  * Description: use the h value to start traversing through the

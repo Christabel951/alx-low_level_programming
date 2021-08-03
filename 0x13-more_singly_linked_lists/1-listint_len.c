@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
-/** listint_len - return the number of elements in listint_t list
+/**
+ * listint_len - return the number of elements in listint_t list
  * @h: pointer variable containing 1st node address
  *
  * Description: use the h value to traverse through the

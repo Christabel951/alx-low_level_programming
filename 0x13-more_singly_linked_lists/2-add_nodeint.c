@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
-/** add_nodeint - add node at beginning of list
+/**
+ * add_nodeint - add node at beginning of list
  * @head: pointer to a poiter variable containing 1st node address
  *
  * Description: allocate memory for a new node, assign value

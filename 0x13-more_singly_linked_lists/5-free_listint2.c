@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
-/** free_listint - free list
+/**
+ * free_listint - free list
  * @head: pointer to pointer variable containing 1st node's address
  *
  * Description: delete list and initializes *head to NULL
