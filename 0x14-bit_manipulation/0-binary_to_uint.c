@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - compute the length of a string
  * @s: pointer to a char
@@ -53,12 +52,12 @@ int _pow_recursion(int x, int y)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, j, convert, flag, result = 0;
-	const unsigned int base = 2;
-	unsigned int len = _strlen(b);
+	unsigned int convert, result = 0;
+	int i, j, flag, len, base = 2;
 
 	if (!b)
 		return (0);
+	len = _strlen(b);
 	j = len - 1;
 	for (i = 0; i < len; i++)
 	{
@@ -68,7 +67,7 @@ unsigned int binary_to_uint(const char *b)
 			flag = 0;
 		else
 			return (0);
-		convert = flag * _pow_recursion(base, j);
+		convert = (unsigned int)(flag * _pow_recursion(base, j));
 		result += convert;
 		j--;
 	}
