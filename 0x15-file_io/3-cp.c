@@ -1,5 +1,6 @@
 #include "main.h"
 #include "holberton.h"
+
 /**
  * main - copies content of a file to another file
  * @argc: argument count
@@ -12,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int fdr, fdw, r, c, cl;
-	char buf[1024];
+	char buf[BUFSIZ];
 
 	if (argc != 3)
 	{
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fdw = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while ((r = read(fdr, buf, 1024)) > 0)
+	while ((r = read(fdr, buf, BUFSIZ)) > 0)
 	{
 		if (fdw < 0 || write(fdw, buf, r) != r)
 		{
