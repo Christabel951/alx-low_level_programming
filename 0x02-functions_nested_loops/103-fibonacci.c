@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long int fib1 = 1, fib2 = 2, fib, sum = 0;
+	unsigned long int fib1 = 1, fib2 = 2, fib, sum = 2;
 
 	while (fib2 <= 4000000)
 	{
