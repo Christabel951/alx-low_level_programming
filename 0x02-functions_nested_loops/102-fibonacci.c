@@ -5,9 +5,9 @@
  *
  * Return: 0 - Successful program execution
  */
-int main()
+int main(void)
 {
-	int i, fib1 = 1, fib2 = 2, fib;
+	long int i, fib1 = 1, fib2 = 2, fib;
 
 	for (i = 1; i <= 50; i++)
 	{
