@@ -1,33 +1,30 @@
 #include <stdio.h>
 /**
  * main - print the first 50 fibonacci numbers starting with 1 and 2
+ * and followed by a new line
  *
  * Return: 0 - Successful program execution
  */
 int main()
 {
-	int arr[50];
-	int fib, i, j = 0;
+	int i, fib1 = 1, fib2 = 2, fib;
 
 	for (i = 1; i <= 50; i++)
 	{
 		if (i == 1 || i == 2)
 		{
-			arr[j] = i;
-			printf("%d, ", arr[j]);
-			j++;
+			printf("%d, ", i);
 		}
 		else
 		{
-			fib = arr[j - 1] + arr[j - 2];
-			arr[j] = fib;
+			fib = fib1 + fib2;
+			fib1 = fib2;
+			fib2 = fib;
 			if (i == 50)
-				printf("%d", arr[j]);
+				printf("%d\n", fib2);
 			else
-				printf("%d, ", arr[j]);
-			j++;
+				printf("%d, ", fib2);
 		}
 	}
-	printf("\n");
 	return (0);
 }
