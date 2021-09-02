@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i == 1 || i == 2)
 		{
-			printf("%d, ", i);
+			printf("%ld, ", i);
 		}
 		else
 		{
@@ -21,9 +21,9 @@ int main(void)
 			fib1 = fib2;
 			fib2 = fib;
 			if (i == 50)
-				printf("%d\n", fib2);
+				printf("%ld\n", fib2);
 			else
-				printf("%d, ", fib2);
+				printf("%ld, ", fib2);
 		}
 	}
 	return (0);
