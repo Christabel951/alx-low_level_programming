@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long int fib1 = 1, fib2 = 2, fib, sum = 0;
 
-	while (fib2 < 4000000)
+	while (fib2 <= 4000000)
 	{
 		fib = fib1 + fib2;
 		fib1 = fib2;
