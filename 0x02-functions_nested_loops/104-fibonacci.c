@@ -9,7 +9,7 @@ int main(void)
 {
 	long int i, fib1 = 1, fib2 = 2, fib;
 
-	for (i = 1; i <= 98; i++)
+	for (i = 1; i <= 95; i++)
 	{
 		if (i == 1 || i == 2)
 		{
@@ -20,7 +20,7 @@ int main(void)
 			fib = fib1 + fib2;
 			fib1 = fib2;
 			fib2 = fib;
-			if (i == 98)
+			if (i == 95)
 				printf("%ld\n", fib2);
 			else
 				printf("%ld, ", fib2);
